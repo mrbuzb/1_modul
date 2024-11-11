@@ -1,0 +1,640 @@
+namespace Homework_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(NotReplace("This is Right"));
+
+        }
+
+        public static string HelloName(string name)
+        {
+            return ($"Hello {name}!");
+        }
+
+        public static string MakeAbba(string firstSentence, string secondSentence)
+        {
+            return ($"{firstSentence}{secondSentence}{secondSentence}{firstSentence}");
+        }
+
+        public static string MakeOutWord(string firstSentence, string secondSentence)
+        {
+            return (firstSentence.Insert(2, secondSentence));
+        }
+
+        public static string ExtraEnd(string sentence)
+        {
+            string lastTwoLetter = sentence.Substring(sentence.Length - 2);
+            return $"{lastTwoLetter}{lastTwoLetter}{lastTwoLetter}";
+        }
+
+        public static string ExtraStart(string sentence)
+        {
+            if (sentence.Length > 2)
+            {
+                return sentence.Substring(0, 2);
+            }
+            else
+            {
+                return sentence;
+            }
+        }
+
+        public static string FirstHalf(string sentence)
+        {
+            return sentence.Substring(0, sentence.Length / 2);
+        }
+
+        public static string WithoutEnd(string sentence)
+        {
+            sentence = sentence.Remove(0, 1);
+            return sentence.Remove(sentence.Length - 1, 1);
+        }
+
+        public static string ComboString(string firstSentence, string secondSentence)
+        {
+            if (firstSentence.Length > secondSentence.Length)
+            {
+                return secondSentence + firstSentence + secondSentence;
+            }
+            return firstSentence + secondSentence + firstSentence;
+        }
+
+        public static string NonStart(string firstSentence, string secondSentence)
+        {
+            return firstSentence.Remove(0, 1) + secondSentence.Remove(0, 1);
+        }
+
+        public static string LeftTwo(string sentence)
+        {
+            return sentence.Remove(0, 2) + sentence.Substring(0, 2);
+        }
+
+        public static char TheEnd(string sentence, bool boolean)
+        {
+            if (boolean is true)
+            {
+                return sentence[0];
+            }
+            return sentence[sentence.Length - 1];
+        }
+
+        public static string NumberTwice(string sentence, int number)
+        {
+            return sentence.Substring(0, number) + sentence.Substring(sentence.Length - number);
+        }
+
+        public static string MiddleThree(string sentence)
+        {
+            return sentence.Substring(sentence.Length / 2 - 1, 3);
+        }
+
+        public static string ConCat(string FirstSentence, string secondSentence)
+        {
+            return FirstSentence + secondSentence;
+        }
+
+        public static string LastTwo(string sentence)
+        {
+            return sentence.Remove(sentence.Length - 2, 2) +
+                sentence.Substring(sentence.Length - 1, 1) +
+                sentence.Substring(sentence.Length - 2, 1);
+        }
+
+        public static string SeeColor(string sentence)
+        {
+            var startThree = sentence.Substring(0, 3);
+            var startFour = sentence.Substring(0, 4);
+            var emp = startThree.ToUpper();
+            var empTwo = startFour.ToUpper();
+            if (emp is "RED")
+            {
+                return startThree;
+            }
+            else if (empTwo is "BLUE")
+            {
+                return startFour;
+            }
+            return "";
+        }
+
+        public static bool FrontAgain(string sentence)
+        {
+            var empty = sentence.Substring(0, 2);
+            return sentence.StartsWith(empty) && sentence.EndsWith(empty);
+        }
+
+        public static string MinCat(string firstSentence, string secondSentence)
+        {
+            var minValue = Math.Min(firstSentence.Length, secondSentence.Length);
+            if (minValue == firstSentence.Length)
+            {
+                return firstSentence + secondSentence.Substring
+                    (secondSentence.Length - minValue);
+            }
+            else if (minValue == secondSentence.Length)
+            {
+                return firstSentence.Substring
+                   (firstSentence.Length - minValue) + secondSentence;
+            }
+            else
+            {
+                return "error";
+            }
+        }
+
+        public static string DeFront(string sentence)
+        {
+            if (sentence[0] != 'a' && sentence[1] != 'b')
+            {
+                return sentence.Remove(0, 2);
+            }
+            else if (sentence[0] == 'a' && sentence[1] == 'b')
+            {
+                return sentence;
+            }
+            else if (sentence[0] == 'a')
+            {
+                return sentence.Remove(1, 1);
+            }
+            return sentence.Remove(0, 1);
+        }
+
+        public static string WithoutX(string sentence)
+        {
+            if (sentence.StartsWith("x") && sentence.EndsWith("x"))
+            {
+                sentence = sentence.Remove(0, 1);
+                return sentence.Remove(sentence.Length - 1);
+            }
+            else if (sentence.StartsWith("x"))
+            {
+                return sentence.Remove(0, 1);
+            }
+            else if (sentence.EndsWith("x"))
+            {
+                return sentence.Remove(sentence.Length - 1);
+            }
+            return sentence;
+        }
+
+        /////////////////////////////
+        //////////////////////////////
+        ////////////////////////////
+        /////////////////////////////
+        //////////////////////////////
+        ///PDF_2
+
+
+        public static bool CatDog(string sentence)
+        {
+            var forCat = "";
+            var amountOfCat = 0;
+            var copySentence = sentence;
+            for (var i = 0; i < sentence.Length - 2; i++)
+            {
+                forCat = sentence.Substring(i, 3);
+                if (forCat == "cat")
+                {
+                    amountOfCat++;
+                    sentence = sentence.Remove(i, 3);
+                }
+            }
+            var forDog = "";
+            var amountOfDog = 0;
+            for (var i = 0; i < copySentence.Length - 2; i++)
+            {
+                forDog = copySentence.Substring(i, 3);
+                if (forDog == "dog")
+                {
+                    amountOfDog++;
+                    copySentence = copySentence.Remove(i, 3);
+                }
+            }
+            return amountOfCat == amountOfDog;
+        }
+
+        public static int CountCode(string sentence)
+        {
+            var copyCode = "";
+            var countCode = 0;
+            for (var i = 0; i < sentence.Length - 3; i++)
+            {
+                copyCode = sentence.Substring(i, 4);
+                if (copyCode[0] == 'c' && copyCode[1] == 'o' && copyCode[3] == 'e' &&
+                    char.IsLetter(copyCode[2]))
+                {
+                    countCode++;
+                }
+            }
+            return countCode;
+        }
+
+        public static bool EndOther(string firstSentence, string secondSentence)
+        {
+            firstSentence = firstSentence.ToUpper();
+            secondSentence = secondSentence.ToUpper();
+            if (firstSentence.Length >= secondSentence.Length)
+            {
+                return firstSentence.EndsWith(secondSentence);
+            }
+            return secondSentence.EndsWith(firstSentence);
+        }
+
+        public static bool XyzThere(string sentence)
+        {
+            if (sentence.IndexOf("xyz") > 0)
+            {
+                var indexOfXyz = sentence.IndexOf("xyz");
+                if (sentence[indexOfXyz - 1] is '.')
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static string MixString(string firstSentence, string secondSentence)
+        {
+            var shortLength = Math.Min(firstSentence.Length, secondSentence.Length);
+            var empty = "";
+            for (var i = 0; i < shortLength; i++)
+            {
+                empty += Convert.ToString(firstSentence[i]) + Convert.
+                    ToString(secondSentence[i]);
+            }
+            if (shortLength == firstSentence.Length && firstSentence.Length
+                != secondSentence.Length)
+            {
+                return empty + secondSentence.Remove(0, shortLength);
+            }
+            return empty + firstSentence.Remove(0, shortLength);
+        }
+
+        public static string RepeatEnd(string sentence, int randNum)
+        {
+            var empty = "";
+            var endOfSentence = sentence.Substring(sentence.Length - randNum);
+            for (var i = 0; i < randNum; i++)
+            {
+                empty += endOfSentence;
+            }
+            return empty;
+        }
+
+        public static string RepeatFront(string sentence, int randNum)
+        {
+            var copySentence = sentence;
+            var forRes = sentence.Substring(0, randNum);
+            return forRes + copySentence.Substring(0, randNum - 1) + copySentence
+                .Substring(0, randNum - 2);
+        }
+
+        public static string RepeatSeperator(string firstSentence, string secondSentence,
+            int randNum)
+        {
+            var copyFirstSentence = firstSentence;
+            var emp = "";
+            for (var i = 0; i < randNum; i++)
+            {
+                emp += secondSentence + copyFirstSentence;
+            }
+            emp = emp.Remove(0, secondSentence.Length);
+            return emp;
+        }
+
+        public static bool PrefixAgain(string sentence, int num)
+        {
+            var startOfSentence = sentence.Substring(0, num);
+            sentence = sentence.Remove(0, num);
+            return sentence.IndexOf(startOfSentence) > 0;
+        }
+
+        public static bool XyzMiddle(string sentence)
+        {
+            var findIndexXyz = sentence.IndexOf("xyz");
+            var startOfsentence = sentence.Substring(0, findIndexXyz - 1);
+            var endOfSentence = sentence.Substring(findIndexXyz + 4);
+            return startOfsentence.Length - endOfSentence.Length == 0 ||
+                startOfsentence.Length - endOfSentence.Length == 1 ||
+                startOfsentence.Length - endOfSentence.Length == -1;
+        }
+
+        public static string GetSandwich(string sentence)
+        {
+            var startIndexOfBread = sentence.IndexOf("bread");
+            sentence = sentence.Remove(0, startIndexOfBread + 5);
+            var lastIndexOfBread = sentence.LastIndexOf("bread");
+            if (lastIndexOfBread == -1)
+            {
+                return "";
+            }
+            sentence = sentence.Remove(lastIndexOfBread);
+            return sentence;
+        }
+
+        public static bool SameStarChar(string sentence)
+        {
+            if (sentence.IndexOf("*") == -1)
+            {
+                return false;
+            }
+            var index = 0;
+            var num = 0;
+            while (true)
+            {
+                index = sentence.IndexOf("*", num);
+                if (index == 0)
+                {
+                    num++;
+                    continue;
+                }
+                else if (index == sentence.Length - 1)
+                {
+                    return true;
+                }
+                else if (sentence[index - 1] == sentence[index + 1])
+                {
+                    sentence = sentence.Remove(index - 1, 3);
+                    num = 0;
+                    continue;
+                }
+                return false;
+            }
+        }
+
+        public static string PlusOut(string firstSentence, string secondSentence)
+        {
+            if (secondSentence.Length < firstSentence.Length)
+            {
+                var emp = "";
+                var res = "";
+                for (var i = 0; i < firstSentence.Length; i++)
+                {
+                    if (firstSentence.Length - res.Length >= secondSentence.Length)
+                    {
+                        emp = firstSentence.Substring(i, secondSentence.Length);
+                        if (emp == secondSentence)
+                        {
+                            res += emp;
+                            i += emp.Length - 1;
+                        }
+                        else
+                        {
+                            res += "+";
+                        }
+                    }
+                }
+                if (res.Length < firstSentence.Length)
+                {
+                    return res + "+";
+                }
+                return res;
+            }
+            return "Error";
+        }
+
+        public static int CountYz(string sentence)
+        {
+            var count = 0;
+            for (var i = 0; i < sentence.Length; i++)
+            {
+                if (sentence[i] == 'y' || sentence[i] == 'z' && !char.IsLetter(sentence[i + 1]))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static string WithoutString(string sentenceOne, string sentenceTwo)
+        {
+            while (true)
+            {
+                var indeks = sentenceOne.IndexOf(sentenceTwo);
+                if (indeks != -1)
+                {
+                    sentenceOne = sentenceOne.Remove(indeks, sentenceTwo.Length);
+                    continue;
+                }
+                else if (indeks == -1)
+                {
+                    break;
+                }
+            }
+            return sentenceOne;
+        }
+        public static bool EqualIsNot(string sentence)
+        {
+            var copyOfIs = "";
+            var copyOfNot = "";
+            var countIs = 0;
+            var countNot = 0;
+            for (var i = 0; i < sentence.Length - 1; i++)
+            {
+                copyOfIs = "";
+                copyOfIs = sentence.Substring(i, 2);
+                if (copyOfIs == "is")
+                {
+                    countIs++;
+                    i += 1;
+                }
+            }
+            for (var i = 0; i < sentence.Length - 2; i++)
+            {
+                copyOfNot = "";
+                copyOfNot = sentence.Substring(i, 3);
+                if (copyOfNot == "not")
+                {
+                    countNot++;
+                    i += 2;
+                }
+
+            }
+            return countIs == countNot;
+        }
+
+        public static bool GHappy(string sentence)
+        {
+            var gHappy = false;
+            for (var i = 1; i < sentence.Length; i++)
+            {
+                if (sentence.StartsWith("g"))
+                {
+                    if (sentence[1] == 'g')
+                    {
+                        gHappy = true;
+                    }
+                    else
+                    {
+                        gHappy = false;
+                        break;
+                    }
+                }
+                if (sentence.EndsWith("g"))
+                {
+                    if (sentence[sentence.Length - 2] == 'g')
+                    {
+                        gHappy = true;
+                    }
+                    else
+                    {
+                        gHappy = false;
+                        break;
+                    }
+                }
+                if (sentence[i] == 'g' && sentence[i + 1] == 'g' || sentence[i] == 'g'
+                    && sentence[i - 1] == 'g')
+                {
+                    gHappy = true;
+                }
+                else if ((sentence[i] == 'g' && sentence[i + 1] != 'g' ||
+                    sentence[i] == 'g' && sentence[i - 1] != 'g'))
+                {
+                    gHappy = false;
+                    break;
+                }
+            }
+            return gHappy;
+        }
+
+        public static int CountTripple(string sentence)
+        {
+            var countOfTripple = 0;
+            for (var i = 0; i < sentence.Length - 2; i++)
+            {
+                if (sentence[i] == sentence[i + 1] && sentence[i] == sentence[i + 2])
+                {
+                    countOfTripple++;
+                }
+            }
+            return countOfTripple;
+        }
+
+        public static int SumDigit(string sentence)
+        {
+            var sum = 0;
+            for (var i = 0; i < sentence.Length; i++)
+            {
+                if (char.IsDigit(sentence[i]))
+                {
+                    sum += sentence[i] - 48;
+                }
+            }
+            return sum;
+        }
+
+
+        public static string SameEnds(string sentence)
+        {
+            var num = 0;
+            while (true)
+            {
+                if (num >= sentence.Length / 2)
+                {
+                    return "Error";
+                }
+                var copy = sentence.Substring(0, (sentence.Length / 2) - num);
+                for (var i = 0; i <= sentence.Length / 2; i++)
+                {
+                    if (sentence.IndexOf(copy) != sentence.LastIndexOf(copy))
+                    {
+                        return copy;
+                    }
+                    else
+                    {
+                        num++;
+                        break;
+                    }
+                }
+                continue;
+            }
+        }
+
+        public static int MaxBlock(string sentence)
+        {
+            if(sentence == "")
+            {
+                return 0;
+            }
+            var longLength =0;
+            var lengg = 0;
+            for (var i = 0; i < sentence.Length - 1; i++)
+            {
+                if (sentence[i] == sentence[i + 1])
+                {
+                    for (var j = i+1; j < sentence.Length - 1; j++)
+                    {
+                        if (sentence[i] == sentence[j])
+                        {
+                            lengg++;
+                            continue;
+                        }
+                        else
+                        {
+                            if(lengg > longLength)
+                            {
+                                longLength = lengg;
+                            }
+                            break;
+                        }
+                    }
+                    lengg = 0;
+                }
+            }
+            return longLength+1;
+        }
+
+        public static int SumNumbers(string sentence)
+        {
+            sentence += "s";
+            var sum = 0;
+            var veriable = 0;
+            var count = 0;
+            for(var i = 0;i < sentence.Length ; i++)
+            {
+                if (char.IsDigit(sentence[i]))
+                {
+                    for(var j = i;j < sentence.Length ; j++)
+                    {
+                        if (char.IsDigit(sentence[j]))
+                        {
+                            veriable=veriable*10+(sentence[j]-48);
+                            count++;
+                            continue;
+                        }
+                        else
+                        {
+                            sum += veriable;
+                            veriable = 0;
+                            i += count;
+                            count = 0;
+                            break;
+                        }
+                    }
+                }
+            }
+            return sum;
+        }
+
+        public static string NotReplace(string sentence)
+        {
+            sentence = " " + sentence;
+            for (var  i = 0; i < sentence.Length -1; i++)
+            {
+                if (sentence[i] == 'i' && sentence[i + 1] == 's' && !char.IsLetter(sentence[i-1]))
+                {
+                    sentence = sentence.Remove(i,2);
+                    sentence = sentence.Insert(i, "is not");
+                    i += 5;
+                }
+            }
+            sentence =sentence.Remove(0,1);
+            return sentence;
+        }
+
+
+
+    }
+}
