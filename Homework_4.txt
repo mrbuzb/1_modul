@@ -1,0 +1,410 @@
+namespace Homework_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*var text =Console.ReadLine();
+            ReversedString(ref text);
+            Console.WriteLine(text);*/
+
+
+            /*var text = Console.ReadLine();
+            var count = 0;
+            CountOfVowles(ref text,ref count);
+            Console.WriteLine(count);*/
+
+
+            /*var text = Console.ReadLine();
+            var isReverse = false;
+            isPalindrom(ref text, ref isReverse);
+            Console.WriteLine(isReverse);*/
+
+            /*var text=Console.ReadLine();
+            var count = 0;
+            countOfWWords(ref text, ref count);
+            Console.WriteLine(count);*/
+
+
+
+            Console.WriteLine(Prefiks("gulzor","gullar"));
+
+
+
+
+
+
+        }
+
+
+
+
+        public static void ReversedString(ref string text)
+        {
+            var emp = string.Empty;
+            foreach (var item in text)
+            {
+                emp = item + emp;
+            }
+            text = emp;
+        }
+
+        public static void CountOfVowles(ref string text, ref int count)
+        {
+            var vowles = "AaEeIiOoUu";
+            count = 0;
+            foreach (var item in text)
+            {
+                if (vowles.IndexOf(item) != -1)
+                {
+                    count++;
+                }
+
+            }
+        }
+
+        public static void isPalindrom(ref string text, ref bool res)
+        {
+            var emp = string.Empty;
+            foreach (var item in text)
+            {
+                emp = item + emp;
+            }
+            if (emp == text)
+            {
+                res = true;
+            }
+        }
+
+        public static bool isPalindromBool(string text)
+        {
+            var res = false;
+            var emp = string.Empty;
+            foreach (var item in text)
+            {
+                emp = item + emp;
+            }
+            if (emp == text)
+            {
+                res = true;
+            }
+            return res;
+        }
+
+        public static void countOfWWords(ref string text, ref int count)
+        {
+            text = " " + text + "  ";
+            for (var i = 1; i < text.Length - 1; i++)
+            {
+                if (char.IsLetter(text[i]))
+                {
+                    continue;
+                }
+                else if ((text[i] == ' ') is true && char.IsLetter(text[i - 1]) is true)
+                {
+                    count++;
+                }
+            }
+
+        }
+
+        public static void ReturnedLetters(string text)
+        {
+            var count = 0;
+            for (var i = 0; i < text.Length; i++)
+            {
+                count = 0;
+                if ((char.IsLetter(text[i])) is true)
+                {
+                    for (var j = i; j < text.Length; j++)
+                    {
+                        if (text[j] == text[i])
+                        {
+                            count++;
+                        }
+                    }
+                }
+                if (count >= 2)
+                {
+                    Console.WriteLine($"{text[i]}:{count}");
+                }
+                text = text.Replace(text[i], ' ');
+            }
+        }
+
+        public static void DelSpace(ref string text)
+        {
+            text = text.Replace(" ", "");
+        }
+
+        public static void Replaced(ref string text)
+        {
+            text = text.Replace("o", "x");
+        }
+
+        public static void LengthCounter(ref string text, ref int count)
+        {
+            count = 0;
+            foreach (var letter in text)
+            {
+                count++;
+            }
+        }
+
+        public static int SubstrCount(string text, string subs)
+        {
+            var cop = string.Empty;
+            var count = 0;
+            for (var i = 0; i <= text.Length - subs.Length; i++)
+            {
+                cop = text.Substring(i, subs.Length);
+                if (cop == subs)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static string LongToShort(string text)
+        {
+            var emp = string.Empty;
+            foreach (var letter in text)
+            {
+                if (char.IsUpper(letter))
+                {
+                    emp += char.ToLower(letter);
+                }
+                else if (char.IsLower(letter))
+                {
+                    emp += char.ToUpper(letter);
+                }
+                else
+                {
+                    emp += letter;
+                }
+            }
+            return emp;
+        }
+
+        public static bool Anagram(string firstText, string secondText)
+        {
+            var sum = 0;
+            for (var i = 0; i < firstText.Length; i++)
+            {
+                sum += firstText[i];
+            }
+            for (var i = 0; i < secondText.Length; i++)
+            {
+                sum -= secondText[i];
+            }
+            return sum == 0;
+        }
+
+        public static string LongestStr(string text)
+        {
+            var longestStr = string.Empty;
+            var copy = string.Empty;
+            text = " " + text + "  ";
+            for (var i = 1; i < text.Length - 1; i++)
+            {
+                if (char.IsLetter(text[i]))
+                {
+                    copy += text[i];
+                    continue;
+                }
+                else if ((text[i] == ' ') is true && char.IsLetter(text[i - 1]) is true)
+                {
+                    if (copy.Length > longestStr.Length)
+                    {
+                        longestStr = copy;
+                    }
+                    copy = string.Empty;
+                }
+            }
+            return longestStr;
+
+        }
+
+        public static string LongestStr1(string text)
+        {
+            var copy = string.Empty;
+            text = " " + text + "  ";
+            var emp = string.Empty;
+            for (var i = 1; i < text.Length - 1; i++)
+            {
+                if (char.IsLetter(text[i]))
+                {
+                    copy += text[i];
+                    continue;
+                }
+                else if ((text[i] == ' ') is true && char.IsLetter(text[i - 1]) is true)
+                {
+                    emp += copy;
+                    text = text.Replace(copy, "");
+                    copy = string.Empty;
+                    i = 0;
+                }
+                else
+                {
+                    emp += text[i];
+                }
+            }
+            emp = emp.Remove(emp.Length - 1, 1);
+            return emp;
+
+        }
+
+        public static string ketmaket(string text)
+        {
+            var emp = string.Empty;
+            text = " " + text + " ";
+            var count = 0;
+            for (var i = 1; i < text.Length; i++)
+            {
+                for (var j = i; j < text.Length; j++)
+                {
+                    if (text[i] == text[j])
+                    {
+                        count++;
+                    }
+                    else
+                    {
+                        emp += Convert.ToString(text[i]) + Convert.ToString(count);
+                        i += count - 1;
+                        count = 0;
+                        break;
+                    }
+                }
+            }
+
+            return emp;
+        }
+
+
+        public static string EngUzunPalindrom(string text)
+        {
+            var emp = string.Empty;
+            var palindromWord = string.Empty;
+            var palindromLength = 0;
+            text = " " + text + "  ";
+            for (var i = 1; i < text.Length - 1; i++)
+            {
+                if (char.IsLetter(text[i]))
+                {
+                    emp += text[i];
+                    continue;
+                }
+                else if ((text[i] == ' ') is true)
+                {
+                    if (isPalindromBool(emp) && emp.Length > palindromWord.Length)
+                    {
+                        palindromWord = emp;
+                    }
+                    emp = string.Empty;
+                }
+            }
+
+            return palindromWord;
+        }
+
+        public static string EngUZunPalindrom2(string text)
+        {
+            var emp = string.Empty;
+            var longgest=string.Empty;
+            for (var i = text.Length - 1; i >= 0; i--)
+            {
+                if (isPalindromBool(text.Substring(0, i)))
+                {
+                    emp = text.Substring(0, i);
+                    if (emp.Length > longgest.Length)
+                    {
+                        longgest = emp;
+                    }
+
+                }
+            }
+            if(longgest.Length==text.Length)
+            {
+                return emp;
+            }
+            return longgest;
+        }
+
+
+        public static int StoI(string text)
+        {
+            int intRes = 0;
+            foreach (var letter in text)
+            {
+                if (char.IsDigit(letter))
+                {
+                    intRes = intRes * 10+(letter - 48);
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            return intRes;
+        }
+
+        public static bool isBracketsEqual(string text)
+        {
+            var countOne = 0;
+            var countTwo = 0;
+            foreach (var letter in text)
+            {
+                if (letter == '(')
+                {
+                    countOne++;
+                }
+            }
+            foreach (var letter in text)
+            {
+                if (letter == ')')
+                {
+                    countTwo++;
+                }
+            }
+            return countOne==countTwo;
+        }
+
+        public static string Prefiks(string textOne ,string textTwo)
+        {
+            var empOne = string.Empty;
+            var empTwo = string.Empty;
+            var longgest = string.Empty;
+            var textOneLength = textOne.Length - 1;
+            var textTwoLength = textTwo.Length - 1;
+            while (true)
+            {
+                for (var i = textOneLength; i >= 0; i--)
+                {
+                    empOne = textOne.Substring(0,textOneLength);
+                    break;
+                }
+                for (var i = textTwoLength; i >= 0; i--)
+                {
+                    empTwo = textTwo.Substring(0, textTwoLength);
+                    break;
+                }
+                if(empOne == empTwo)
+                {
+                    break;
+                }
+                textOneLength--;
+                textTwoLength--;
+                if (textOneLength == 0 || textTwoLength == 0)
+                {
+                    break ;
+                }
+                continue;
+                
+            }
+
+            return empOne;
+        }
+
+    }
+}
