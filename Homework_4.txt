@@ -226,7 +226,7 @@ namespace Homework_4
 
         }
 
-        public static string LongestStr1(string text)
+        public static string LongestStrTwo(string text)
         {
             var copy = string.Empty;
             text = " " + text + "  ";
@@ -255,7 +255,7 @@ namespace Homework_4
 
         }
 
-        public static string ketmaket(string text)
+        public static string consecutively(string text)
         {
             var emp = string.Empty;
             text = " " + text + " ";
@@ -282,33 +282,9 @@ namespace Homework_4
         }
 
 
-        public static string EngUzunPalindrom(string text)
-        {
-            var emp = string.Empty;
-            var palindromWord = string.Empty;
-            var palindromLength = 0;
-            text = " " + text + "  ";
-            for (var i = 1; i < text.Length - 1; i++)
-            {
-                if (char.IsLetter(text[i]))
-                {
-                    emp += text[i];
-                    continue;
-                }
-                else if ((text[i] == ' ') is true)
-                {
-                    if (isPalindromBool(emp) && emp.Length > palindromWord.Length)
-                    {
-                        palindromWord = emp;
-                    }
-                    emp = string.Empty;
-                }
-            }
+        
 
-            return palindromWord;
-        }
-
-        public static string EngUZunPalindrom2(string text)
+        public static string LongPalindrome(string text)
         {
             var emp = string.Empty;
             var longgest=string.Empty;

@@ -1,0 +1,593 @@
+namespace Quest
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i] >= 100 && nums[i] <= 999)
+                {
+                    count ++;
+                }
+            }
+            Console.WriteLine(count);*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i]%2==0)
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine(count);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var oddsSum = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if ((nums[i] % 2 == 0) is false)
+                {
+                    oddsSum += nums[i];
+                }
+            }
+            Console.WriteLine(oddsSum);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i] % 3 == 0 && nums[i] % 7 == 0)
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine(count);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+            var sumOfOddTwoRooms = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i] >= 10 && nums[i] <= 99 && nums[i] % 2 != 0)
+                {
+                    count++;
+                    sumOfOddTwoRooms += nums[i];
+                }
+            }
+            Console.WriteLine($"Soni:{count} || Yig'indisi:{sumOfOddTwoRooms}");*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+            var firstNum = nums[0];
+            var secondNum = nums[nums.Count-1];
+            nums[0] = secondNum;
+            nums[nums.Count-1] = firstNum;
+            DisplayList(nums);*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+            Console.WriteLine(nums[0] + nums[1] + nums[2]);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var oddsCount = 0;
+            var evensCount = 0;
+
+            for (int i = 0; i < nums.Count; i++)
+            {
+                if (nums[i] % 2 == 0)
+                {
+                    evensCount++;
+                }
+                else
+                {
+                    oddsCount++;
+                }
+            }
+            Console.WriteLine(evensCount==oddsCount);*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            for (int i = 0; i < nums.Count; i++)
+            {
+                if (nums[i] % 2 == 0)
+                {
+                    nums[i] *= 3;
+                }
+            }
+            DisplayList(nums);*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+            var sumOfOddTwoRooms = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i] % 5 == 0)
+                {
+                    continue;
+                }
+                Console.WriteLine("False");
+                Main(args);
+            }
+            Console.WriteLine("True");*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+            var sumOfOddTwoRooms = 0;
+            if (nums[0] >= 10 && nums[0] <= 99 && nums[1] >= 10 && nums[1] <= 99 &&
+                nums[2] >= 10 && nums[2] <= 99)
+            {
+                Console.WriteLine("True");
+                Main(args);
+            }
+            Console.WriteLine("False");*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+            var sumOfOddTwoRooms = 0;
+            if (nums[0] %2==0 && nums[1] %2==0&&nums[nums.Count-1] %2!=0&&
+                nums[nums.Count-2] %2!=0)
+            {
+                Console.WriteLine("True");
+                Main(args);
+            }
+            Console.WriteLine("False");*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var littleElement = Int32.MaxValue;
+            
+            for (int i = 0; i < nums.Count; i++)
+            {
+                if(nums[i] < littleElement)
+                {
+                    littleElement = nums[i];
+                }
+            }
+
+            Console.WriteLine(littleElement);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var littleElement = Int32.MaxValue;
+            var maxElement=Int32.MinValue;
+
+            for (int i = 0; i < nums.Count; i++)
+            {
+                if (nums[i] < littleElement)
+                {
+                    littleElement = nums[i];
+                }
+                else if (nums[i] > maxElement)
+                {
+                    maxElement = nums[i];
+                }
+
+            }
+
+            Console.WriteLine(littleElement+maxElement);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i] >= 10 && nums[i] <= 99)
+                {
+                    nums[i]+=100;
+                }
+            }
+            DisplayList(nums);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var positive = 0;
+            var negative = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i]>0)
+                {
+                    positive++;
+                }
+                else if (nums[i] < 0)
+                {
+                    negative++;
+                }
+            }
+            Console.WriteLine($"musbat:{positive}\nmanfiy:{negative}");*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var firstElement = nums[0];
+            var count = 0;
+            for (int i = 1; i < listLength; i++)
+            {
+                if (nums[i] <firstElement)
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine(count);*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var lastElement = nums[nums.Count-1];
+            var sum = 0;
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i] < lastElement)
+                {
+                    sum += nums[i];
+                }
+            }
+            Console.WriteLine(sum);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i] % 4 == 0 || nums[i] % 3 == 0)
+                {
+                    continue;
+                }
+                Console.WriteLine("salom");
+                Main(args);
+            }
+            Console.WriteLine("Hello");*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            for (int i = 0; i < listLength-1; i++)
+            {
+                if (nums[i] < nums[i+1])
+                {
+                    continue;
+                }
+                Console.WriteLine("False");
+                Main(args);
+            }
+            Console.WriteLine("True");*/
+
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            for (int i = 0; i < listLength - 1; i++)
+            {
+                if (nums[i] > nums[i + 1])
+                {
+                    continue;
+                }
+                Console.WriteLine("False");
+                Main(args);
+            }
+            Console.WriteLine("True");*/
+
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var maxNum = Int32.MinValue;
+            var minNum = Int32.MaxValue;
+            var maxNumInd = 0;
+            var minNumInd = 0;
+
+            for (int i = 0; i < listLength; i++)
+            {
+                if (nums[i] > maxNum)
+                {
+                    maxNum = nums[i];
+                    maxNumInd = i;
+                }
+                if (nums[i] < minNum)
+                {
+                    minNum = nums[i];
+                    minNumInd = i;
+                }
+            }
+            nums[maxNumInd] = minNum;
+            nums[minNumInd] = maxNum;
+            DisplayList(nums);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var sum = 0;
+
+            for (int i = 0; i < listLength; i++)
+            {
+                sum+= nums[i];
+            }
+            Console.WriteLine(sum);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var sumOfTwo = Int32.MinValue;
+            var maxOne = 0;
+            var maxTwo = 0;
+
+            for (int i = 0; i < listLength-1; i++)
+            {
+                if (nums[i] + nums[i+1] > sumOfTwo)
+                {
+                    maxOne = nums[i];
+                    maxTwo = nums[i+1];
+                    sumOfTwo=maxOne+maxTwo;
+                }
+            }
+            Console.WriteLine($"{maxOne},{maxTwo}");*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+
+            for (int i = 0; i < listLength - 1; i++)
+            {
+                if (nums[i] > nums[i + 1])
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine(count);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            Console.WriteLine("1-massive :");
+            FillList(nums, listLength);
+
+            var numsTwo= new List<int>();
+            Console.WriteLine("2-massive :");
+            FillList(numsTwo, listLength);
+
+            var numsThree= new List<int>();
+
+
+            for (int i = 0; i < listLength ; i++)
+            {
+                numsThree.Add(nums[i] * numsTwo[i]);
+            }
+            Console.WriteLine("3-massive :");
+            DisplayList(numsThree);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var texts = new List<string>();
+            FillListStr(texts, listLength);
+
+            var count = 0;
+
+            for (int i = 0; i < listLength; i++)
+            {
+                if (texts[i][0]=='$')
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine(count);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var texts = new List<string>();
+            FillListStr(texts, listLength);
+
+            for (int i = 0; i < listLength; i++)
+            {
+                if (char.IsUpper(texts[i][0]))
+                {
+                    Console.WriteLine(texts[i]);
+                }
+            }*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var count = 0;
+
+            for (int i = 0; i < listLength - 1; i++)
+            {
+                if (nums[i] %2==0)
+                {
+                    for (int j = i+1;j < listLength;j++)
+                    {
+                        if(nums[j] % 2 == 0)
+                        {
+                            nums[i]*= nums[j];
+                            break;
+                        }
+                    }
+                }
+            }
+            DisplayList(nums);*/
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            for (int i = 0; i < listLength - 1; i++)
+            {
+                if (nums[i] % 2 != 0)
+                {
+                    for (int j =listLength-1; j >= i+1; j--)
+                    {
+                        if (nums[j] % 2 != 0)
+                        {
+                            nums[i] *= nums[j];
+                            break;
+                        }
+                    }
+                }
+            }
+            DisplayList(nums);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            FillList(nums, listLength);
+
+            var minIndEven = Int32.MaxValue;
+
+            for (int i = 0; i < listLength; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    if(nums[i] < minIndEven)
+                    {
+                        minIndEven = nums[i];
+                    }
+                }
+            }
+            Console.WriteLine(minIndEven);*/
+
+
+            /*var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            Console.WriteLine("1-massive :");
+            FillList(nums, listLength);
+
+            var numsTwo = new List<int>();
+            Console.WriteLine("2-massive :");
+            FillList(numsTwo, listLength);
+
+            var numsThree = new List<int>();
+
+
+            for (int i = 0; i < listLength; i++)
+            {
+                numsThree.Add(Math.Max(nums[i] , numsTwo[i]));
+            }
+            Console.WriteLine("3-massive :");
+            DisplayList(numsThree);*/
+
+
+            var listLength = int.Parse(Console.ReadLine());
+            var nums = new List<int>();
+            Console.WriteLine("1-massive :");
+            FillList(nums, listLength);
+
+            var numsTwo = new List<int>();
+
+            for (int i = 0; i < listLength; i++)
+            {
+                if(nums[i] % 2 == 0)
+                {
+                   numsTwo.Add(nums[i]);
+                }
+            }
+            Console.WriteLine("2-massive :");
+            DisplayList(numsTwo);
+
+
+
+
+
+
+            Main(args);
+        }
+
+
+        public static void FillListStr(List<string> texts, int listLength)
+        {
+            for (int i = 0;i < listLength; i++)
+            {
+                var element=Console.ReadLine();
+                texts.Add(element);
+            }
+        }
+
+        public static void DisplayList(List<int> nums)
+        {
+            for (int i = 0; i < nums.Count; i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
+        }
+
+        public static void FillList(List<int> numbers, int listLength)
+        {
+            for (var i = 0; i < listLength; i++)
+            {
+                var getInfo = int.Parse(Console.ReadLine());
+                numbers.Add(getInfo);
+            }
+        }
+
+
+    }
+}
