@@ -1,0 +1,295 @@
+namespace Phone_crud
+{
+    internal class Program
+    {
+        public static List<string> funnyMovie = new List<string>();
+        public static List<string> militantMovie = new List<string>();
+        public static List<string> detectiveMovie = new List<string>();
+
+        public static void dataSeedFunMovie()
+        {
+            funnyMovie.Add("MASK");
+            funnyMovie.Add("TUXEDO");
+            funnyMovie.Add("MOUSE HANT");
+        }
+        public static void dataSeedMilMovie()
+        {
+            militantMovie.Add("SNIPER");
+            militantMovie.Add("PROFILE");
+            militantMovie.Add("ZOOTOPIA");
+        }
+        public static void dataSeedDetectMovie()
+        {
+            detectiveMovie.Add("SEVEN");
+            detectiveMovie.Add("JACK REACHER");
+            detectiveMovie.Add("SNOWMAN");
+        }
+        ///////////////////////
+        static void Main(string[] args)
+        {
+            dataSeedFunMovie();
+            dataSeedMilMovie();
+            dataSeedDetectMovie();
+            openMenu();
+        }
+
+        ////////////////////////
+
+        public static bool CheckMovieName(string movieName)
+        {
+            if (char.IsLetter(movieName[0]))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+
+        public static void openMenu()
+        {
+            while (true)
+            {
+                Console.WriteLine("\t\t\t\t\t\tSellect Genre");
+                Console.WriteLine("1.Funny Movie");
+                Console.WriteLine("2.Militant Movie");
+                Console.WriteLine("3.Detective Movie");
+                Console.Write("------->");
+                var genre = int.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("\t\t\t\t\t-OPTIONS-");
+                Console.WriteLine("1.Add Movie");
+                Console.WriteLine("2.Remove Movie");
+                Console.WriteLine("3.Update Movie");
+                Console.WriteLine("4.Read Movie");
+                Console.Write("------->");
+                var option = int.Parse(Console.ReadLine());
+                Console.Clear();
+                var nameMovie = String.Empty;
+                if (option == 1)
+                {
+                    if (genre == 1)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>FUNY");
+                        Console.Write("Enter Movie Name :");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckFunnGenre(nameMovie) is false)
+                        {
+                            funnyMovie.Add(nameMovie);
+                            Console.WriteLine($"Movie Added :{funnyMovie.Count - 1}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+                    else if (genre == 2)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>MILITANT");
+                        Console.Write("Enter Movie Name :");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckMilGenre(nameMovie) is false)
+                        {
+                            militantMovie.Add(nameMovie);
+                            Console.WriteLine($"Movie Added :{militantMovie.Count - 1}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+                    else if (genre == 3)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>DETECTIVE");
+                        Console.Write("Enter Movie Name :");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckDetectMovie(nameMovie) is false)
+                        {
+                            detectiveMovie.Add(nameMovie);
+                            Console.WriteLine($"Movie Added :{detectiveMovie.Count - 1}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+
+                }
+                else if (option == 2)
+                {
+                    if (genre == 1)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>FUNY");
+                        Console.Write("Enter Removed Movie Name :");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckFunnGenre(nameMovie) is true)
+                        {
+                            funnyMovie.Remove(nameMovie);
+                            Console.WriteLine($"Movie Removed");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+                    else if (genre == 2)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>MILITANT");
+                        Console.Write("Enter Movie Name :");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckMilGenre(nameMovie) is true)
+                        {
+                            militantMovie.Remove(nameMovie);
+                            Console.WriteLine("Movie Removed");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+                    else if (genre == 3)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>DETECTIVE");
+                        Console.Write("Enter Movie Name :");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckDetectMovie(nameMovie) is true)
+                        {
+                            detectiveMovie.Remove(nameMovie);
+                            Console.WriteLine($"Movie Removed");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+
+                }
+                if (option == 3)
+                {
+                    var oldMovie = string.Empty;
+                    if (genre == 1)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>FUNY");
+                        Console.Write("Enter Old Movie Name :");
+                        oldMovie = Console.ReadLine();
+                        Console.Write("Enter New Movie");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckFunnGenre(oldMovie) is true)
+                        {
+                            var oldMovieInd = funnyMovie.IndexOf(oldMovie);
+                            funnyMovie[oldMovieInd] = nameMovie;
+                            Console.WriteLine($"Movie Updated");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+                    else if (genre == 2)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>MILITANT");
+                        Console.Write("Enter Old Movie Name :");
+                        oldMovie = Console.ReadLine();
+                        Console.Write("Enter New Movie");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckMilGenre(oldMovie) is true)
+                        {
+                            var oldMovieInd = militantMovie.IndexOf(oldMovie);
+                            militantMovie[oldMovieInd] = nameMovie;
+                            Console.WriteLine($"Movie Updated");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+                    else if (genre == 3)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>DETECTIVE");
+                        Console.Write("Enter Old Movie Name :");
+                        oldMovie = Console.ReadLine();
+                        Console.Write("Enter New Movie");
+                        nameMovie = Console.ReadLine();
+                        nameMovie = nameMovie.ToUpper();
+                        if (CheckMovieName(nameMovie) is true && CheckDetectMovie(oldMovie) is true)
+                        {
+                            var oldMovieInd = detectiveMovie.IndexOf(oldMovie);
+                            detectiveMovie[oldMovieInd] = nameMovie;
+                            Console.WriteLine($"Movie Updated");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Movie Name");
+                        }
+                    }
+
+
+                }
+                else if (option == 4)
+                {
+                    if (genre == 1)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>FUNY");
+                        DisplayList(funnyMovie);
+                    }
+                    else if (genre == 2)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>MILITANT");
+                        DisplayList(militantMovie);
+                    }
+                    if (genre == 3)
+                    {
+                        Console.WriteLine("\t\t\t\t\tGENRE------>DETECTIVE");
+                        DisplayList(detectiveMovie);
+                    }
+                }
+
+
+                Console.ReadKey();
+                Console.Clear();
+            }
+        }
+
+
+
+        public static void DisplayList(List<string> list)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+        }
+
+
+        public static bool CheckFunnGenre(string nameMovie)
+        {
+            var result = funnyMovie.Contains(nameMovie);
+            return result;
+        }
+        public static bool CheckMilGenre(string nameMovie)
+        {
+            var result = militantMovie.Contains(nameMovie);
+            return result;
+        }
+        public static bool CheckDetectMovie(string nameMovie)
+        {
+            var result = detectiveMovie.Contains(nameMovie);
+            return result;
+        }
+
+
+
+    }
+}
