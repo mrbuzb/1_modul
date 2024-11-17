@@ -1,0 +1,167 @@
+namespace _6_dars
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //////1
+            ///
+
+            /*var length=int.Parse(Console.ReadLine());
+            var nums=BuildAndGetzList(length);
+            var count = 0;
+            var num = 0;
+            var longCount = 0;
+            for(var i=0;i<nums.Count;i++)
+            {
+                for(var j=i;j<nums.Count;j++)
+                {
+                    if (nums[j] == nums[i])
+                    {
+                        count++;
+                    }
+                }
+                if(count > longCount)
+                {
+                    longCount=count;
+                    num = nums[i];
+                }
+                count = 0;
+            }
+            Console.WriteLine(num);*/
+
+
+
+            /////2
+
+            /*var str=Console.ReadLine();
+            var words=new List<char>();
+            for(var i=str.Length-1;i>=0;i--)
+            {
+                if (char.IsLetter(str[i]))
+                {
+                    words.Add(str[i]);
+                }
+            }
+            var veriable = 0;
+            var reversedWord=string.Empty;
+            for(var i = 0; i < str.Length; i++)
+            {
+                if (char.IsLetter(str[i]))
+                {
+                    reversedWord += words[veriable];
+                    veriable++;
+                }
+                else
+                {
+                    reversedWord += str[i];
+                }
+            }
+
+            Console.WriteLine(reversedWord);*/
+
+            /////3
+
+
+            /*var str = Console.ReadLine();
+            var lastWord = string.Empty;
+            var changedStr = string.Empty;
+            for (var i = 0; i < str.Length; i++)
+            {
+                if (char.IsLetter(str[i]))
+                {
+                    changedStr += str[i];
+                }
+                else
+                {
+                    changedStr += ' ';
+                }
+            }
+            changedStr = changedStr.TrimEnd();
+            for (var i = changedStr.Length - 1; i >= 0; i--)
+            {
+                if (char.IsLetter(changedStr[i]))
+                {
+                    lastWord += changedStr[i];
+                    continue;
+                }
+                break;
+            }
+
+            Console.WriteLine(lastWord.Length);*/
+
+            ///////4
+
+            /*var num = int.Parse(Console.ReadLine());
+            for (int i = 2; i < num; i++)
+            {
+                if (num % i == 0)
+                {
+                    if (i == 2 || i == 3 || i == 5)
+                    {
+                        continue;
+                    }
+                    else if(isPrime(i))
+                    {
+                        Console.WriteLine("False");
+                        return;
+                    }
+                }
+            }
+            Console.WriteLine("True");*/
+
+            var length=int.Parse(Console.ReadLine());
+            var nums=BuildAndGetzList(length);
+            var primeList=new List<int>();
+            for(var i = 0; i < nums.Count; i++)
+            {
+                if (isPrime(nums[i]))
+                {
+                    primeList.Add(nums[i]);
+                }
+            }
+
+            DisplayList(primeList);
+
+
+
+
+        }
+
+        public static void DisplayList(List<int> nums)
+        {
+            foreach(var num in nums)
+            {
+                Console.WriteLine(num);
+            }
+        }
+
+        public static  bool isPrime(int num)
+        {
+            var count = 0;
+            for(int i = 1; i <= num; i++)
+            {
+                if(num % i == 0)
+                {
+                    count++;
+                }
+            }
+            return count == 2;
+        }
+
+
+
+        public static List<int> BuildAndGetzList(int listLength)
+        {
+            var names = new List<int>();
+            for (var i = 0; i < listLength; i++)
+            {
+                var element = int.Parse(Console.ReadLine());
+                names.Add(element);
+            }
+            return names;
+        }
+
+
+    }
+}
