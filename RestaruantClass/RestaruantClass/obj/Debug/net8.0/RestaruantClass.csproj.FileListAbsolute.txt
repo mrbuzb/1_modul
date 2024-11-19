@@ -1,0 +1,15 @@
+D:\project\1_modul\RestaruantClass\RestaruantClass\bin\Debug\net8.0\RestaruantClass.exe
+D:\project\1_modul\RestaruantClass\RestaruantClass\bin\Debug\net8.0\RestaruantClass.deps.json
+D:\project\1_modul\RestaruantClass\RestaruantClass\bin\Debug\net8.0\RestaruantClass.runtimeconfig.json
+D:\project\1_modul\RestaruantClass\RestaruantClass\bin\Debug\net8.0\RestaruantClass.dll
+D:\project\1_modul\RestaruantClass\RestaruantClass\bin\Debug\net8.0\RestaruantClass.pdb
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\RestaruantClass.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\RestaruantClass.AssemblyInfoInputs.cache
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\RestaruantClass.AssemblyInfo.cs
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\RestaruantClass.csproj.CoreCompileInputs.cache
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\RestaruantClass.sourcelink.json
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\RestaruantClass.dll
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\refint\RestaruantClass.dll
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\RestaruantClass.pdb
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\RestaruantClass.genruntimeconfig.cache
+D:\project\1_modul\RestaruantClass\RestaruantClass\obj\Debug\net8.0\ref\RestaruantClass.dll
