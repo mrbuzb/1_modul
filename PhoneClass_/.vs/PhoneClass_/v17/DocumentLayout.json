@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\project\\1_modul\\PhoneClass_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FE027F0-530E-4270-9AEA-565BC30505F5}|PhoneClass_\\PhoneClass_.csproj|d:\\project\\1_modul\\phoneclass_\\phoneclass_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FE027F0-530E-4270-9AEA-565BC30505F5}|PhoneClass_\\PhoneClass_.csproj|solutionrelative:phoneclass_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5FE027F0-530E-4270-9AEA-565BC30505F5}|PhoneClass_\\PhoneClass_.csproj|d:\\project\\1_modul\\phoneclass_\\phoneclass_\\phone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FE027F0-530E-4270-9AEA-565BC30505F5}|PhoneClass_\\PhoneClass_.csproj|solutionrelative:phoneclass_\\phone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE027F0-530E-4270-9AEA-565BC30505F5}|PhoneClass_\\PhoneClass_.csproj|d:\\project\\1_modul\\phoneclass_\\phoneclass_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FE027F0-530E-4270-9AEA-565BC30505F5}|PhoneClass_\\PhoneClass_.csproj|solutionrelative:phoneclass_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Phone.cs",
               "DocumentMoniker": "D:\\project\\1_modul\\PhoneClass_\\PhoneClass_\\Phone.cs",
               "RelativeDocumentMoniker": "PhoneClass_\\Phone.cs",
               "ToolTip": "D:\\project\\1_modul\\PhoneClass_\\PhoneClass_\\Phone.cs",
               "RelativeToolTip": "PhoneClass_\\Phone.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA7wBEAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T05:48:49.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\project\\1_modul\\PhoneClass_\\PhoneClass_\\Program.cs",
               "RelativeDocumentMoniker": "PhoneClass_\\Program.cs",
               "ToolTip": "D:\\project\\1_modul\\PhoneClass_\\PhoneClass_\\Program.cs",
               "RelativeToolTip": "PhoneClass_\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCYAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T05:48:37.051Z",
               "EditorCaption": ""
