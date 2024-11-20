@@ -1,0 +1,15 @@
+D:\project\1_modul\HomeClass\HomeClass\bin\Debug\net8.0\HomeClass.exe
+D:\project\1_modul\HomeClass\HomeClass\bin\Debug\net8.0\HomeClass.deps.json
+D:\project\1_modul\HomeClass\HomeClass\bin\Debug\net8.0\HomeClass.runtimeconfig.json
+D:\project\1_modul\HomeClass\HomeClass\bin\Debug\net8.0\HomeClass.dll
+D:\project\1_modul\HomeClass\HomeClass\bin\Debug\net8.0\HomeClass.pdb
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\HomeClass.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\HomeClass.AssemblyInfoInputs.cache
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\HomeClass.AssemblyInfo.cs
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\HomeClass.csproj.CoreCompileInputs.cache
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\HomeClass.sourcelink.json
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\HomeClass.dll
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\refint\HomeClass.dll
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\HomeClass.pdb
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\HomeClass.genruntimeconfig.cache
+D:\project\1_modul\HomeClass\HomeClass\obj\Debug\net8.0\ref\HomeClass.dll
