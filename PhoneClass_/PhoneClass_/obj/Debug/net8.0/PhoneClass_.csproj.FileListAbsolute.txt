@@ -1,0 +1,15 @@
+D:\project\1_modul\PhoneClass_\PhoneClass_\bin\Debug\net8.0\PhoneClass_.exe
+D:\project\1_modul\PhoneClass_\PhoneClass_\bin\Debug\net8.0\PhoneClass_.deps.json
+D:\project\1_modul\PhoneClass_\PhoneClass_\bin\Debug\net8.0\PhoneClass_.runtimeconfig.json
+D:\project\1_modul\PhoneClass_\PhoneClass_\bin\Debug\net8.0\PhoneClass_.dll
+D:\project\1_modul\PhoneClass_\PhoneClass_\bin\Debug\net8.0\PhoneClass_.pdb
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\PhoneClass_.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\PhoneClass_.AssemblyInfoInputs.cache
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\PhoneClass_.AssemblyInfo.cs
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\PhoneClass_.csproj.CoreCompileInputs.cache
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\PhoneClass_.sourcelink.json
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\PhoneClass_.dll
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\refint\PhoneClass_.dll
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\PhoneClass_.pdb
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\PhoneClass_.genruntimeconfig.cache
+D:\project\1_modul\PhoneClass_\PhoneClass_\obj\Debug\net8.0\ref\PhoneClass_.dll
