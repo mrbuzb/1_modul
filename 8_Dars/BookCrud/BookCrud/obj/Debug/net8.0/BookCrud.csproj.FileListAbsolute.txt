@@ -1,0 +1,15 @@
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\bin\Debug\net8.0\BookCrud.exe
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\bin\Debug\net8.0\BookCrud.deps.json
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\bin\Debug\net8.0\BookCrud.runtimeconfig.json
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\bin\Debug\net8.0\BookCrud.dll
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\bin\Debug\net8.0\BookCrud.pdb
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\BookCrud.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\BookCrud.AssemblyInfoInputs.cache
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\BookCrud.AssemblyInfo.cs
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\BookCrud.csproj.CoreCompileInputs.cache
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\BookCrud.sourcelink.json
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\BookCrud.dll
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\refint\BookCrud.dll
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\BookCrud.pdb
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\BookCrud.genruntimeconfig.cache
+D:\project\1_modul\8_Dars\BookCrud\BookCrud\obj\Debug\net8.0\ref\BookCrud.dll
