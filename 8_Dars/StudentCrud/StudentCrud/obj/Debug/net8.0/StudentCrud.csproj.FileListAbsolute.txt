@@ -1,0 +1,15 @@
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\bin\Debug\net8.0\StudentCrud.exe
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\bin\Debug\net8.0\StudentCrud.deps.json
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\bin\Debug\net8.0\StudentCrud.runtimeconfig.json
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\bin\Debug\net8.0\StudentCrud.dll
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\bin\Debug\net8.0\StudentCrud.pdb
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\StudentCrud.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\StudentCrud.AssemblyInfoInputs.cache
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\StudentCrud.AssemblyInfo.cs
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\StudentCrud.csproj.CoreCompileInputs.cache
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\StudentCrud.sourcelink.json
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\StudentCrud.dll
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\refint\StudentCrud.dll
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\StudentCrud.pdb
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\StudentCrud.genruntimeconfig.cache
+D:\project\1_modul\8_Dars\StudentCrud\StudentCrud\obj\Debug\net8.0\ref\StudentCrud.dll
