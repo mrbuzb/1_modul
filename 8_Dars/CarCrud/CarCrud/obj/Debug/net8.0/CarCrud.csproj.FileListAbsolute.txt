@@ -1,0 +1,15 @@
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\bin\Debug\net8.0\CarCrud.exe
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\bin\Debug\net8.0\CarCrud.deps.json
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\bin\Debug\net8.0\CarCrud.runtimeconfig.json
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\bin\Debug\net8.0\CarCrud.dll
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\bin\Debug\net8.0\CarCrud.pdb
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\CarCrud.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\CarCrud.AssemblyInfoInputs.cache
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\CarCrud.AssemblyInfo.cs
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\CarCrud.csproj.CoreCompileInputs.cache
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\CarCrud.sourcelink.json
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\CarCrud.dll
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\refint\CarCrud.dll
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\CarCrud.pdb
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\CarCrud.genruntimeconfig.cache
+D:\project\1_modul\8_Dars\CarCrud\CarCrud\obj\Debug\net8.0\ref\CarCrud.dll

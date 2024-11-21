@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\project\\1_modul\\8_Dars\\CarCrud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1A2918-04C6-4C5C-9416-561E15F190A1}|CarCrud\\CarCrud.csproj|d:\\project\\1_modul\\8_dars\\carcrud\\carcrud\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D1A2918-04C6-4C5C-9416-561E15F190A1}|CarCrud\\CarCrud.csproj|solutionrelative:carcrud\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1A2918-04C6-4C5C-9416-561E15F190A1}|CarCrud\\CarCrud.csproj|d:\\project\\1_modul\\8_dars\\carcrud\\carcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D1A2918-04C6-4C5C-9416-561E15F190A1}|CarCrud\\CarCrud.csproj|solutionrelative:carcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1A2918-04C6-4C5C-9416-561E15F190A1}|CarCrud\\CarCrud.csproj|d:\\project\\1_modul\\8_dars\\carcrud\\carcrud\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D1A2918-04C6-4C5C-9416-561E15F190A1}|CarCrud\\CarCrud.csproj|solutionrelative:carcrud\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "D:\\project\\1_modul\\8_Dars\\CarCrud\\CarCrud\\Services\\CarService.cs",
+              "RelativeDocumentMoniker": "CarCrud\\Services\\CarService.cs",
+              "ToolTip": "D:\\project\\1_modul\\8_Dars\\CarCrud\\CarCrud\\Services\\CarService.cs",
+              "RelativeToolTip": "CarCrud\\Services\\CarService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:37:58.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Car.cs",
+              "DocumentMoniker": "D:\\project\\1_modul\\8_Dars\\CarCrud\\CarCrud\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "CarCrud\\Models\\Car.cs",
+              "ToolTip": "D:\\project\\1_modul\\8_Dars\\CarCrud\\CarCrud\\Models\\Car.cs",
+              "RelativeToolTip": "CarCrud\\Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:35:46.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\project\\1_modul\\8_Dars\\CarCrud\\CarCrud\\Program.cs",
+              "RelativeDocumentMoniker": "CarCrud\\Program.cs",
+              "ToolTip": "D:\\project\\1_modul\\8_Dars\\CarCrud\\CarCrud\\Program.cs",
+              "RelativeToolTip": "CarCrud\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwC0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:34:47.108Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
