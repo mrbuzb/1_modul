@@ -34,8 +34,7 @@
               "RelativeToolTip": "StudentCrud\\Services\\StudentService.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAxwEAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:34:47.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T11:34:47.58Z"
             },
             {
               "$type": "Document",
@@ -47,8 +46,7 @@
               "RelativeToolTip": "StudentCrud\\Models\\Student.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAIwAsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:28:18.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T11:28:18.942Z"
             },
             {
               "$type": "Document",
@@ -56,9 +54,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\project\\1_modul\\8_Dars\\StudentCrud\\StudentCrud\\Program.cs",
               "RelativeDocumentMoniker": "StudentCrud\\Program.cs",
-              "ToolTip": "D:\\project\\1_modul\\8_Dars\\StudentCrud\\StudentCrud\\Program.cs*",
-              "RelativeToolTip": "StudentCrud\\Program.cs*",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAE8AAAAqAAAAAAAAAA==",
+              "ToolTip": "D:\\project\\1_modul\\8_Dars\\StudentCrud\\StudentCrud\\Program.cs",
+              "RelativeToolTip": "StudentCrud\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAUwAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T11:26:02.349Z",
               "EditorCaption": ""

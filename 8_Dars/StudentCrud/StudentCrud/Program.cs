@@ -7,6 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        var student1 = new Student();
         FrontEnd();
     }
     public static void FrontEnd()
