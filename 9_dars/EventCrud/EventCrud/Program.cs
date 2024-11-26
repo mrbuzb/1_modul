@@ -58,7 +58,8 @@ namespace EventCrud
                         var tags = Console.ReadLine();
                         eventNew.Tags.Add(tags);
                     }
-
+                    service.AddEvent(eventNew);
+                    Console.WriteLine("Event Added !");
                 }
 
                 else if(choise == 2)
@@ -116,7 +117,7 @@ namespace EventCrud
                     }
                     else
                     {
-                        Console.WriteLine("Something is Goes Wrong");
+                        Console.WriteLine("Something is Wrong");
                     }
                 }
 
@@ -180,7 +181,7 @@ namespace EventCrud
                     var res = service.GetEventsByLocation(location);
                     if(res is null)
                     {
-                        Console.WriteLine("Error !");
+                        Console.WriteLine("Not Found !");
                     }
                     else
                     {
@@ -198,6 +199,7 @@ namespace EventCrud
                                 str += tag + " ";
                             }
                             Console.WriteLine(str);
+                            Console.WriteLine("--------------------------------------------");
                         }
 
                     }
@@ -266,6 +268,11 @@ namespace EventCrud
                         Console.WriteLine(res);
                     }
 
+                }
+                else
+                {
+                    Console.Clear();
+                    continue;
                 }
                 Console.ReadKey();
                 Console.Clear();

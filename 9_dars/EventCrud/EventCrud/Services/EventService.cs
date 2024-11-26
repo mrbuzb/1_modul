@@ -68,13 +68,19 @@ public class EventService
 
     public List<Event> GetEventsByLocation (string location)
     {
+        var count = 0;
         var sameLocation =new  List<Event>();
         foreach(var eventt in events)
         {
             if(eventt.Location == location)
             {
+                count++;
                 sameLocation.Add(eventt);
             }
+        }
+        if(count == 0)
+        {
+            return null;
         }
         return sameLocation;
     }
